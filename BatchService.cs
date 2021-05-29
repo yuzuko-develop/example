@@ -1,12 +1,14 @@
 using System;
+using ZLogger;
 
 namespace ConsoleAppFramework
 {
     class BatchService : ConsoleAppBase
     {
+        [Command("exec")]
         public void Exec()
         {
-            Console.WriteLine("Hello Hosting Batch Application!!!");
+            Context.Logger.ZLogDebug("Hello Hosting Batch Application!!!");
         }
     }
 }

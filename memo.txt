@@ -2,3 +2,10 @@ dotnet new console -n ConsoleAppExample -o ./
 
 dotnet add package ConsoleAppFramework --version 3.2.0
 -- 3.3.0はエラーを吐くので注意
+
+dotnet add package ZString --version 2.4.2
+
+dotnet add package ZLogger --version 1.5.0
+
+dotnet publish -r win-x64 -c release /p:PublishSingleFile=true /p:PublishTrimmed=true
+
