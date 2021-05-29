@@ -15,7 +15,7 @@ namespace ConsoleAppExample
         {
             await Host
                 .CreateDefaultBuilder()
-                                .ConfigureLogging((context, logging) =>
+                .ConfigureLogging((context, logging) =>
                 {
                     var prefixFormat = ZString.PrepareUtf8<string, LogLevel>("[{0}][{1}]");
 
