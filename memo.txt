@@ -1,2 +1,4 @@
 dotnet new console -n ConsoleAppExample -o ./
 
+dotnet add package ConsoleAppFramework --version 3.2.0
+-- 3.3.0はエラーを吐くので注意
